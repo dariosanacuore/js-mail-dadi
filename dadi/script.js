@@ -4,6 +4,13 @@ Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
  */
+
+/**
+ * Creo 2 numeri random
+ * Stampo i 2 numeri a schermo
+ * Attraverso if verifico chi ha vinto
+ */
+
 let playRandomNumber = Math.floor(Math.random() * 6) + 1;
 let computerRandomNumber = Math.floor(Math.random() * 6) + 1;
 
