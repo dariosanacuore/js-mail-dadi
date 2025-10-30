@@ -25,5 +25,12 @@ for (let i = 0; i < email.length; i++) {
     if (emailInput === email[i]) {
         isEmailPresent = true;
 
+
     }
+}
+if (isEmailPresent) {
+    console.log(`La tua email ${emailInput} è presente nella lista`);
+}
+else {
+    console.log(`La tua email ${emailInput} non è presente nella lista`);
 }
