@@ -123,15 +123,19 @@ console.log(invitati)
  * Snack 6
 Crea due array che hanno un numero di elementi diversi.  Aggiungi elementi all’array che ha meno elementi fino a quando ne avrà tanti quanti l’altro.
  */
-const alunni = ["Dario", "Daniele", "Stefano"];
+const alunni = ["Dario", "Daniele", "Stefano", "Claudio"];
 const maestri = ["Paolo", "Giorgio"];
 
 if (alunni.length > maestri.length) {
-    console.log("L'array alunni è più grande");
-    for (let i = 0; i < alunni.length; i++) {
-
+    for (let i = maestri.length; i < alunni.length; i++) {
+        maestri.push("Marco");
     }
-    maestri.push("Piero");
+} else if (maestri.length > alunni.length) {
+    for (let i = alunni.length; i < maestri.length; i++) {
+        alunni.push("Marco");
+    }
 }
-console.log(maestri);
-console.log(alunni);
+
+
+console.log("Alunni:", alunni);
+console.log("Maestri:", maestri);
